@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ember &amp; Bean</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">Ember &amp; Bean</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reserve">Reserve</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <span class="eyebrow">Specialty roastery</span>
+      <h1><span>Dark roast.</span><span>Bright mornings.</span></h1>
+      <p><span>Small-batch coffee, roasted over open flame</span><span>and poured by people who care.</span></p>
+      <a class="btn" href="#reserve"><span class="btn-label">Reserve a table <span class="arrow" aria-hidden="true">→</span></span></a>
+    </div>
+    <div class="hero-visual" aria-hidden="true"></div>
+  </section>
+
+  <!-- Menu section -->
+  <section id="menu">
+    <h2>The Menu</h2>
+    <ul class="menu-list">
+      <li><span>Espresso</span><span>$3</span></li>
+      <li><span>Flat White</span><span>$4</span></li>
+      <li class="featured hot"><span>Cold Brew</span><span>$5</span></li>
+      <li><span>Croissant</span><span>$3</span></li>
+      <li><span>Cheesecake</span><span>$5</span></li>
+      <li><span>Brownie</span><span>$4</span></li>
+    </ul>
+  </section>
+
+  <!-- Reserve form -->
+  <section id="reserve">
+    <h2>Reserve a table</h2>
+    <form class="form" action="#" method="post">
+      <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+      <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+      <div class="field"><label for="date">Date</label><input id="date" name="date" type="date" required></div>
+      <div class="field"><label for="guests">Guests</label>
+        <select id="guests" name="guests" required><option value="" selected disabled></option><option>1–2</option><option>3–5</option><option>6+</option></select>
+      </div>
+      <button class="btn" type="submit"><span class="btn-label">Send request</span></button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="visit">
+    <p>10 Abay St · Daily 8:00 AM–10:00 PM</p>
+  </footer>
+</body>
+</html>
